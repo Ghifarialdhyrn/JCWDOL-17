@@ -1,7 +1,7 @@
 // Exercise 1
 // Create a function to check if two objects are equal
 
-function checkEqual(
+function checkEquals(
   obj1: { [key: string]: any },
   obj2: { [key: string]: any }
 ): boolean {
@@ -24,7 +24,7 @@ const obj1 = { a: 1 };
 const obj2 = { a: "hello" };
 const obj3 = { a: 1 };
 
-console.log(checkEqual(obj1, obj2));
+console.log(checkEquals(obj1, obj2));
 
 // Exercise 2
 // Create a function to get the intersection of two objects
