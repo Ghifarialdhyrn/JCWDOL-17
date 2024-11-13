@@ -19,20 +19,19 @@ console.log("=====================================");
 // Exercise 2
 // Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
 
-function singleNumber(nums: number[]): number {
-  let hasil = 0;
+const singleNumber = (arr: number[]) => {
+  const set = new Set(arr); // [2,2,1] => [2,1]
 
-  for (let num of nums) {
-    hasil ^= num;
-  }
-  return hasil;
-}
+  set.forEach((value) => {
+    if (arr.filter((n) => n == value).length == 1) return console.log(value);
+  });
+};
 
 console.log("\nExercise 2");
 console.log("=====================================");
-console.log("Output 1 -> " + singleNumber([2, 2, 1]));
-console.log("Output 2 -> " + singleNumber([4, 1, 2, 1, 2]));
-console.log("Output 3 -> " + singleNumber([1]));
+singleNumber([2, 2, 1]); //1
+singleNumber([4, 1, 2, 1, 2]); //4
+singleNumber([1]); //1
 console.log("=====================================");
 
 // Exercise 3
