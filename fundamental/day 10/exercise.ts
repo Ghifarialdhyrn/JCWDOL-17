@@ -76,3 +76,33 @@ console.log("Output 1 -> " + climbStairs(2));
 console.log("Output 2 -> " + climbStairs(3));
 console.log("=====================================");
 console.log("\n");
+
+// Exercise 5
+// 4 Types of Triangles
+
+function printTriangles(height: number) {
+  for (let i = height; i >= 1; i--) {
+    console.log("*".repeat(i));
+  }
+  console.log("\n");
+
+  for (let i = 1; i <= height; i++) {
+    console.log("*".repeat(i));
+  }
+  console.log("\n");
+
+  for (let i = height; i >= 1; i--) {
+    console.log(" ".repeat(height - i) + "*".repeat(i));
+  }
+  console.log("\n");
+
+  for (let i = 1; i <= height; i++) {
+    console.log(" ".repeat(height - i) + "*".repeat(i));
+  }
+}
+
+console.log("\nExercise 5 (Additional)");
+console.log("=====================================");
+printTriangles(5);
+console.log("=====================================");
+console.log("\n");
