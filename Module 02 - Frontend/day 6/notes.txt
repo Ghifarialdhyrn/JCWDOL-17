@@ -4,3 +4,17 @@ componentWillMount = siklus sebelum page dirender (list of function)
 componentDidMount = siklus setelah page berhasil dirender 
 componentDidUpdate = siklus yg dilalui setelah terjadi perubahan terhadap state
 componentWillUnMount = siklus yang dilalui setelah meninggalkan component
+
+useState    = ( state = sebuah variale yang apabila berubah dapat melakukan re-render
+                setState = function yang digunakan untuk mengubah isi dari state)
+useEffect   =   hooks yang digunakan untuk menjalankan sebuah function pada kondisi (lifecycle method) tertentu
+useRef      =   hooks yang digunakan untuk menyimpan sebuah value. dapat berupa tipe data tertentu atau html element
+useMemo     =   hooks yang digunakan untuk meningkatkan performance (memorize). mengingat dan menyimpan sebuah value. dimana value tersebut dapat berubah sesuai dengan depedency
+useCallback =   hooks yang digunakan untuk me-memorize sebuah function. by default function akan dire-declare apabila terjadi re-render. apabila function tersebut dikirim melalui props 
+                maka component yang memiliki props tersebut akan ikut kere-render sehingga membuat performance menurun
+useContext  =   hooks untuk menggunakan global state.
+useReducer  =   hooks yang digunakan untuk menjalankan sebuah function hooks, dimana perubaha return diatur oleh sebuah kondisi.
+customHook  =   hooks kita buat sendiri. bentuknya sebuah function
+
+local state =   penggunaan state secara lokal. state dideclare di daam sebuah component dan hanya bisa digunakan oleh component tersebut dan children component (state yang di passing lewat props).
+global state =  penggunaan state secara global. state bisa digunakan dicomponent manapun tanpa passing props
