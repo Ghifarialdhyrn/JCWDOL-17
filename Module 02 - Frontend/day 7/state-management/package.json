@@ -1,9 +1,17 @@
 {
+<<<<<<< HEAD
   "name": "hooks2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+=======
+  "name": "state-management",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+>>>>>>> 79f708c950eb1bb5ae327d64377807df43d70eb2
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

@@ -5,6 +5,7 @@ componentDidMount = siklus setelah page berhasil dirender
 componentDidUpdate = siklus yg dilalui setelah terjadi perubahan terhadap state
 componentWillUnMount = siklus yang dilalui setelah meninggalkan component
 
+<<<<<<< HEAD
 useState    = ( state = sebuah variale yang apabila berubah dapat melakukan re-render
                 setState = function yang digunakan untuk mengubah isi dari state)
 useEffect   =   hooks yang digunakan untuk menjalankan sebuah function pada kondisi (lifecycle method) tertentu
@@ -18,3 +19,18 @@ customHook  =   hooks kita buat sendiri. bentuknya sebuah function
 
 local state =   penggunaan state secara lokal. state dideclare di daam sebuah component dan hanya bisa digunakan oleh component tersebut dan children component (state yang di passing lewat props).
 global state =  penggunaan state secara global. state bisa digunakan dicomponent manapun tanpa passing props
+=======
+useState =      (state = sebuah variable yang apabila berubah dapat melakukan re-render
+                setState = function yg digunakan untuk mengubah isi dari state)
+useEffect =     hooks yang digunakan untuk menjalankan sebuah function pada kondisi(lifecycle method) tertentu
+useRef =        hooks yang digunakan untuk menyimpan sebuah value. dapat berupa tipe data tertentu atau html element
+useMemo =       hooks yang digunakan untuk meningkatkan performance (memorized). mengingat dan menyimpan sebuah value. dimana value tersebut dapat berubah sesuai dengan dependency
+useCallback =   hooks yang digunakan untuk me-memorized sebuah function. by default function akan dire-declare apabila terjadi re-render. apabila function tsb dikirim melalui props.
+                maka component yang memiliki props tersebut akan ikut ke-render sehingga membuat performance menurun
+useContext  =   hooks untuk menggunakan globalstate.
+useReducer  =   hooks yang digunakan untuk menjalan sebuah function hooks, dimana perubahan state diatur oleh sebuah kondisi.
+customHook  =   hooks kita buat sendiri. bentuknya sebuah function
+
+local state =   adalah penggunaan state secara local. state dideclare di dalam sebuah component dan hanya bisa digunakan oleh component tsb dan children component(state yang dipass lewat props).
+global state =  adalah penggunaan state secara global. state bisa digunakan dicomponent manapun tanpa passing props
+>>>>>>> 79f708c950eb1bb5ae327d64377807df43d70eb2
